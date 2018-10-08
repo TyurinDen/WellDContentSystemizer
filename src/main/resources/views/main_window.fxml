@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <SplitPane dividerPositions="0.3" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TreeView prefHeight="723.0" prefWidth="358.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="148.0">
+               <children>
+                  <Accordion layoutX="52.0" layoutY="202.0" prefHeight="478.0" prefWidth="277.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="0.0">
+                    <panes>
+                      <TitledPane alignment="TOP_LEFT" animated="false" contentDisplay="RIGHT" text="Все файлы" textFill="#384f9a">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0">
+                                 <children>
+                                    <ListView editable="true" layoutX="18.4" layoutY="42.4" prefHeight="414.0" prefWidth="779.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <HBox layoutX="73.0" layoutY="519.0" minWidth="65.0" prefHeight="30.0" prefWidth="680.0" spacing="10.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                       <children>
+                                          <CheckBox mnemonicParsing="false" text="All files">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox mnemonicParsing="false" text=".img" />
+                                          <CheckBox mnemonicParsing="false" text=".doc" />
+                                          <CheckBox mnemonicParsing="false" text=".pdf" />
+                                          <CheckBox layoutX="201.0" layoutY="15.0" mnemonicParsing="false" text=".xls" />
+                                          <CheckBox layoutX="256.0" layoutY="15.0" mnemonicParsing="false" text=".txt" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children></AnchorPane>
+                        </content>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Las-файлы" textFill="#a10d0d">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TreeTableView layoutX="263.0" layoutY="135.0" prefHeight="618.0" prefWidth="785.0" showRoot="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columns>
+                                        <TreeTableColumn prefWidth="250.0" text="Имя файла / кривая" />
+                                        <TreeTableColumn editable="false" prefWidth="70.0" sortable="false" text="Старт" />
+                                          <TreeTableColumn prefWidth="70.0" resizable="false" sortable="false" text="Стоп" />
+                                          <TreeTableColumn prefWidth="100.0" text="Дата ГИС" />
+                                          <TreeTableColumn prefWidth="150.0" text="Компания" />
+                                          <TreeTableColumn prefWidth="150.0" text="Еще что-то" />
+                                      </columns>
+                                    </TreeTableView>
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Планшеты" textFill="#368630">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView layoutX="185.0" layoutY="142.0" prefHeight="568.0" prefWidth="785.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                        <TitledPane animated="false" text="Керн" textFill="#cd2d9a">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView layoutX="374.0" layoutY="175.0" prefHeight="568.0" prefWidth="785.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children></AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="ИПТ" textFill="#1373bc">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView layoutX="116.0" layoutY="173.0" prefHeight="568.0" prefWidth="785.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children></AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="ПВР" textFill="#b82dba">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView layoutX="258.0" layoutY="138.0" prefHeight="568.0" prefWidth="785.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="1280.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <CheckBox mnemonicParsing="false" text="CheckBox" />
+            <CheckBox mnemonicParsing="false" text="CheckBox" />
+            <Label text="Label" />
+            <Label layoutX="1102.0" layoutY="25.0" text="Label" />
+            <Label layoutX="1059.0" layoutY="25.0" text="Label" />
+            <Label layoutX="1016.0" layoutY="25.0" text="Label" />
+            <TextField>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
